@@ -154,3 +154,114 @@ button:hover {
     background: var(--color3--hover);
 }
 /*----------------CONTAINER CreateAd ------ Fim -----*/
+
+
+/* ---------modal ---------*/
+
+dialog {
+    width: 48.8rem;
+    background: var(--color2);
+    border: none;
+    margin: auto auto;
+
+    padding: 3.2rem 4rem;
+    color: var(--white);
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 0.6);
+}
+
+dialog label {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+dialog h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3.2rem;
+}
+
+.content-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.select,.input-box{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+select{
+    appearance: none;
+    border: none;
+    background-color: var(--color4);
+    padding: 1.2rem 1.6rem ;
+    border-radius: .4rem;
+    font-size: 1.4rem;
+    color: var(--color1-2);
+}
+
+input{
+    border: none;
+    background-color: #18181B;
+    padding:1.2rem 1.6rem ;
+    border-radius: .4rem;
+    font-size: 1.4rem;
+    color: var(--color1-2);
+}
+
+
+.anosDiscord{
+    display: flex;
+    flex-direction: row;
+    gap: 2.4rem;
+}
+.anosDiscord input {
+    width: 192px;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+
+    margin-top: .8rem;
+    gap: .8rem;
+}
+
+.check label {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.check input {
+    width: 2rem;
+    height: 2rem;
+    accent-color: var(--color3--hover);
+}
+
+.btn {
+    margin-top: 1.6rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.6rem;
+}
+.btn button {
+    padding: 0rem 2rem;
+    height: 4.8rem;
+    border-radius: .6;
+    font-weight: 600;
+}
+
+.fechar {
+    background-color: var(--color1-2);
+}
+
+.fechar:hover {
+    background-color: var(--color1-2--hover);
+}

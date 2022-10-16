@@ -1,5 +1,11 @@
 const url = "http://localhost:3333/games"
 const postContainer = document.querySelector(".container__games")
+const buttonShow = document.querySelector(".abrir")
+const buttonClose = document.querySelector(".fechar")
+const buttonSubmit = document.querySelector(".submit")
+
+const modal = document.querySelector("dialog")
+
 
 async function get() {
     const response = await fetch(url)
@@ -40,3 +46,21 @@ async function get() {
 }
 
 get()
+
+
+buttonShow.onclick = function() {
+    modal.showModal()
+}
+
+buttonClose.onclick = function() {
+    modal.close()
+}
+
+
+buttonClose.addEventListener("click", (e) =>{
+    e.preventDefault();
+})
+
+buttonSubmit.addEventListener("click", (e) =>{
+    e.preventDefault();
+})

@@ -33,7 +33,7 @@
                     <span>Publique um anúncio para encontrar novos players!</span>
                 </div>
                 <div class="right">
-                    <button>
+                    <button class="abrir">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.875 10.875H13.875" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M10.875 7.875V13.875" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -45,6 +45,67 @@
                 </div>
             </div>
         </div>
+        
+        <dialog>
+            <form>
+                <h2>Publique um anúncio</h2>
+   
+               <div class="content-form">
+                   <div class="input-box">
+                       <label for="game">Qual o game?</label>
+                       <select name="game" id="game">
+                           <optgroup>
+                                <option value="" selected>Selecione o game que deseja jogar</option>
+                                <option value="CS:GO">CS:GO</option>
+                                <option value="League of Legends">League of Legends</option>
+                                <option value="Apex Legends">Apex Legends</option>
+                                <option value="Fortnite">Fortnite</option>
+                                <option value="World of warcraft">World of warcraft</option>
+                                <option value="Dota 2">Dota 2</option>
+                            </optgroup>
+                       </select>
+                   </div> 
+
+                   <div class="input-box">
+                        <label for="">Seu nome (ou nickname)</label>
+                        <input type="text" placeholder="Como te chamam dentro do game?">
+                   </div>
+
+                   <div class="anosDiscord">
+                        <div class="input-box">
+                            <label for="">Joga há quantos anos?</label>
+                            <input type="number" placeholder="Tudo bem ser ZERO">
+                        </div>
+                        <div class="input-box">
+                          <label for="">Qual seu Discord?</label>
+                            <input type="text" placeholder="Usuario#0000">
+                        </div>
+                    </div>
+
+                     <div class="check">
+                        <input id="lembrar" type="checkbox">
+                        <label for="lembrar">Costumo me conectar ao chat de voz</label>
+                    </div>
+
+                    <div class="btn"> 
+                        <button type="menu" class="fechar">Cancelar</button>
+                        <button class="submit">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.25 10.125H17.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.75 10.125H9.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.25 8.625V11.625" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.125 5.22186L7.87505 5.24999C6.72918 5.25217 5.62055 5.65714 4.74309 6.39408C3.86563 7.13101 3.27518 8.15298 3.07504 9.28124V9.28124L1.53754 17.1656C1.43882 17.7162 1.51856 18.2839 1.76514 18.786C2.01171 19.2881 2.41222 19.6983 2.90828 19.9568C3.40434 20.2153 3.97 20.3086 4.52278 20.223C5.07557 20.1375 5.58657 19.8776 5.98129 19.4812V19.4812L10.0313 15L16.125 14.9719C17.418 14.9719 18.6579 14.4582 19.5722 13.544C20.4864 12.6298 21 11.3898 21 10.0969C21 8.80393 20.4864 7.56396 19.5722 6.64972C18.6579 5.73548 17.418 5.22186 16.125 5.22186V5.22186Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.925 9.25311L22.4625 17.1656C22.5612 17.7162 22.4815 18.2839 22.2349 18.786C21.9883 19.2881 21.5878 19.6983 21.0918 19.9568C20.5957 20.2153 20.03 20.3086 19.4773 20.223C18.9245 20.1375 18.4135 19.8776 18.0187 19.4812V19.4812L13.9688 14.9812" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Encontrar duo</button>
+                    </div>
+               </div>
+           </form>
+
+           
+        </dialog>
+       
+        
     </div>
 </body>
 </html>
